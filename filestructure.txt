@@ -1,5 +1,7 @@
 |-- .gitignore
 |-- cartoonization.py
+|-- cartoon_model_pix2pix.ipynb
+|-- cartoon_model_Pix2Pix.py
 |-- dataset
     |-- cartoon
         |-- cartoon_1.jpg
@@ -1632,3 +1634,6 @@
         |-- 997.jpg
         |-- 999.jpg
 |-- README.md
+|-- requirements.txt
+|-- split_dataset.ipynb
+|-- test_model_pix2pix.ipynb

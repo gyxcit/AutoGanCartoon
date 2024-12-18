@@ -127,9 +127,11 @@ def cartoonize_folder(input_folder, output_folder, target_size=None):
         except Exception as e:
             print(f"Failed to process {file_path}: {e}")
 
+"""
 # Example usage
 input_folder = Path(r"dataset/normal")
 output_folder = Path(r"dataset/cartoon")
 target_size = (500, 500)  # Resize images to 500x500 pixels
 
 cartoonize_folder(input_folder, output_folder, target_size=target_size)
+"""

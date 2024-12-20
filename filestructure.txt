@@ -1,4 +1,5 @@
 |-- .gitignore
+|-- cartoonified_image.jpg
 |-- cartoonization.py
 |-- dataset
     |-- cartoon
@@ -2449,9 +2450,8 @@
 |-- models
     |-- discriminator_epoch100_model.h5
     |-- discriminator_model.h5
+    |-- generator_epoch100_model.h5
     |-- generator_model.h5
-    |-- generator__epoch100_model.h5
-|-- model_pixpie2.ipynb
 |-- README.md
 |-- requirements.txt
 |-- test.ipynb

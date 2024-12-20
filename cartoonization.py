@@ -119,7 +119,7 @@ def cartoonize_folder(input_folder, output_folder, target_size=None):
             img = cv2.imread(file_path)
             cartoonized_img = caart(img, target_size)
 
-            output_filename = f"cartoon_{os.path.splitext(filename)[0]}{os.path.splitext(filename)[1]}"
+            output_filename = f"{os.path.splitext(filename)[0]}{os.path.splitext(filename)[1]}"
             output_path = os.path.join(output_folder, output_filename)
 
             cv2.imwrite(output_path, cartoonized_img)
@@ -127,11 +127,10 @@ def cartoonize_folder(input_folder, output_folder, target_size=None):
         except Exception as e:
             print(f"Failed to process {file_path}: {e}")
 
-"""
+
 # Example usage
 input_folder = Path(r"dataset/normal")
 output_folder = Path(r"dataset/cartoon")
-target_size = (500, 500)  # Resize images to 500x500 pixels
+target_size = (256, 256)  # Resize images to 500x500 pixels
 
 cartoonize_folder(input_folder, output_folder, target_size=target_size)
-"""

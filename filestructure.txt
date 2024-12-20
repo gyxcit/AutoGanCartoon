@@ -1,7 +1,5 @@
 |-- .gitignore
 |-- cartoonization.py
-|-- cartoon_model_pix2pix.ipynb
-|-- cartoon_model_Pix2Pix.py
 |-- dataset
     |-- cartoon
         |-- 1.jpg
@@ -2447,13 +2445,17 @@
         |-- 996.jpg
         |-- 997.jpg
         |-- 999.jpg
-|-- discriminator_model.h5
-|-- generator_model.h5
 |-- learning_curves.png
+|-- models
+    |-- discriminator_epoch100_model.h5
+    |-- discriminator_model.h5
+    |-- generator_model.h5
+    |-- generator__epoch100_model.h5
 |-- model_pixpie2.ipynb
 |-- README.md
 |-- requirements.txt
-|-- split_dataset.ipynb
+|-- test.ipynb
+|-- test1_.py
 |-- test_gen
     |-- 65.jpg
     |-- 66.jpg
@@ -2461,4 +2463,4 @@
     |-- 68.jpg
     |-- 70.jpg
     |-- 72.jpg
-|-- test_model_pix2pix.ipynb
+|-- trainingGan.ipynb

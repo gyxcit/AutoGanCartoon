@@ -50,3 +50,31 @@ the video capture file is called: `opt_cars.mp4`
 **Note:** 
 - For the video, once the transformation has been made, the video will be generated but will not be able to open directly on vscode; it will have to be opened with a video player.
 - The results of the tests we've carried out can be found in the result_gen folder, but your results will be generated in the current project folder.
+---
+## Files organisation
+```bash
+|-- .gitignore
+|-- assets
+    |-- learning_curves.png
+|-- cartoonization.py
+|-- cartoon_effects.py
+|-- dataset
+    |-- cartoon/ 
+    |-- normal/
+|-- models
+    |-- discriminator_epoch100_model.h5
+    |-- discriminator_model.h5
+    |-- generator_epoch100_model.h5
+    |-- generator_model.h5
+|-- README.md
+|-- requirements.txt
+|-- result_gen
+    |-- cartoon_image.jpg
+    |-- cartoon_video.mp4
+    |-- opt_cars.mp4
+|-- test_gen/
+|-- test_models.py
+|-- trainingGan.ipynb
+|-- __pycache__
+    |-- cartoon_effects.cpython-312.pyc
+```

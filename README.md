@@ -20,7 +20,7 @@ pip install -r requirement.txt
 ```
 
 ### Test 
-if you want to test directly, you can use the pretrain version we setup in the file  **test_model.py**
+if you want to test directly, you can use the pretrain version we setup in the file  **test_model.py**.<br>
 
 ---
 ## Informations
@@ -33,7 +33,7 @@ if you want to test directly, you can use the pretrain version we setup in the f
     - we splitted our dataset directly in the training with a function of scikit-leanr so we don't have to create another folder for train and test. 
     - As we didn't have a gpu at our disposal, we used google colab, which gave us access to powerful GPUs.
 
-3. Finally, the ***`test_models.py`*** file contain code for you to test the cartoonization effect on your own for:
+3. We have the **cartoon.py**  file that contain classes and functions for the use of our trained models for cartoonization. Finally, ***`test_models.py`*** file contain code for you to test the cartoonization effect on your own for:
     - image
     - video
 

@@ -1,9 +1,8 @@
 |-- .gitignore
-|-- cartoonified_image.jpg
+|-- assets
+    |-- learning_curves.png
 |-- cartoonization.py
 |-- cartoon_effects.py
-|-- cartoon_image.jpg
-|-- cartoon_video.mp4
 |-- dataset
     |-- cartoon
         |-- 1.jpg
@@ -2449,7 +2448,6 @@
         |-- 996.jpg
         |-- 997.jpg
         |-- 999.jpg
-|-- learning_curves.png
 |-- models
     |-- discriminator_epoch100_model.h5
     |-- discriminator_model.h5
@@ -2457,7 +2455,10 @@
     |-- generator_model.h5
 |-- README.md
 |-- requirements.txt
-|-- test.ipynb
+|-- result_gen
+    |-- cartoon_image.jpg
+    |-- cartoon_video.mp4
+    |-- opt_cars.mp4
 |-- test_gen
     |-- 65.jpg
     |-- 66.jpg

@@ -20,11 +20,33 @@ pip install -r requirement.txt
 ```
 
 ### Test 
-if you want to test directly, you can use the pretrain version we setup in the file **test.ipynb** or **test1_.py**
+if you want to test directly, you can use the pretrain version we setup in the file  **test_model.py**
 
 ---
 ## Informations
-# Projet de cartonisation des images 
-Pour le projet la première étape a été de créer un algorithme qui nous permet de cartoonizer les images en utilisant des techniques de computer vision. Cet algorithme se trouve dans le fichier cartoonization.py, grâce à lui nous avons pu cartooniser nos images et créer la base de connaissance pour l'entraînement du modèle.
-Pour la deuxième étape qui consistait à créer un modèle de Pix2Pix qui est modèle de GAN (réseaux antagonistes génératifs), pour se faire nous avons tout d'abord separer nos données de notre base de connaissances en données d'entraînement et de test du modèle. Cette étape est situé dans le fichier split_dataset.ipynb. Ensuite nous avons entraîné notre modèle, dans le fichier trainingGan.ipynb on y retrouve la création du modèle et et son entraînement.L'image de la learning curves nous permet de visualiser la courbe d'apprentissage de notre modèle et donc de la valider.
-Enfin dans les fichiers test.ipynb et test1_.py nous retrouvons les différents test de notre modèle.
+### Image cardboarding project 
+1. The first step in the project was to create an algorithm that would enable us to cartoonize the images using computer vision techniques. This algorithm can be found in the file ***`cartoonization.py`*** which enabled us to cartoonize our images and create the knowledge base for training the model.
+
+2. For the second step, which consisted in creating a GAN (generative adversarial network) model of Pix2Pix, we trained our model in the ***`trainingGan.ipynb`*** file, where we can see how the model was created and trained. The learning curves over the epoch.<br>
+    ![My Image](assets/learning_curves.png)
+    **Note:**
+    - we splitted our dataset directly in the training with a function of scikit-leanr so we don't have to create another folder for train and test. 
+    - As we didn't have a gpu at our disposal, we used google colab, which gave us access to powerful GPUs.
+
+3. Finally, the ***`test_models.py`*** file contain code for you to test the cartoonization effect on your own for:
+    - image
+    - video
+
+examples:
+---
+| normal             | cartoon            |
+|-----------------------|----------------------|
+| ![Image 1](test_gen/72.jpg) | ![Image 2](result_gen/cartoon_image.jpg) |
+
+--- 
+The video generated is `cartoon _video.mp4` , but it doesn't open in vscode, it has to be opened with a video player, so we made a video capture to show the result. 
+the video capture file is called: `opt_cars.mp4`
+
+**Note:** 
+- For the video, once the transformation has been made, the video will be generated but will not be able to open directly on vscode; it will have to be opened with a video player.
+- The results of the tests we've carried out can be found in the result_gen folder, but your results will be generated in the current project folder.

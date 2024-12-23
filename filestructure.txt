@@ -1,6 +1,9 @@
 |-- .gitignore
 |-- cartoonified_image.jpg
 |-- cartoonization.py
+|-- cartoon_effects.py
+|-- cartoon_image.jpg
+|-- cartoon_video.mp4
 |-- dataset
     |-- cartoon
         |-- 1.jpg
@@ -2455,7 +2458,6 @@
 |-- README.md
 |-- requirements.txt
 |-- test.ipynb
-|-- test1_.py
 |-- test_gen
     |-- 65.jpg
     |-- 66.jpg
@@ -2463,4 +2465,8 @@
     |-- 68.jpg
     |-- 70.jpg
     |-- 72.jpg
+    |-- test.mp4
+|-- test_models.py
 |-- trainingGan.ipynb
+|-- __pycache__
+    |-- cartoon_effects.cpython-312.pyc
